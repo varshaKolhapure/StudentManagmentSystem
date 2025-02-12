@@ -1,0 +1,44 @@
+<p>contact-us works!</p>
+Hello{{uname}}
+<br>
+<!-----data Binding---->
+<h3>data Binding</h3>
+
+<input type="text" value="{{uname}}">
+<br>
+<br>
+
+<input type="text" value="{{uname}}" disabled>
+<br>
+<input type="text" value="{{uname}}" disabled="{{flag1}}">
+<br>
+<input type="text" value="{{uname}}" disabled="{{flag2}}">
+<br>
+<br>
+
+<!-----Property Binding---->
+<h3>Property Binding</h3>
+
+<input type="text" [value]="uname">
+<br>
+<br>
+<input type="text" [value]="uname" [disabled]="flag1">
+<br>
+<input type="text" [value]="uname" [disabled]="flag2">
+<br>
+<br>
+
+<!-- Events  -->
+<h3>Click Event</h3>
+<button (click)="myfun()">Click</button>
+<br>
+<br>
+<br>
+
+<!-- ngModel  -->
+<h3> ngModel</h3>
+
+<input type="text" [(ngModel)]="uname">
+<br>
+
+
